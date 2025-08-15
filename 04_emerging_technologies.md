@@ -2,8 +2,7 @@
 
 ## Purpose
 
-The main purpose of virtual reality is to give experience in the advanced world where users can actually feel the virtual world. Virtual Reality provides users the immersive experiences from the convenience of their home by replacing their surroundings with a virtual world.  
-This will also be italic
+_The main purpose of virtual reality is to give experience in the advanced world where users can actually feel the virtual world. Virtual Reality provides users the immersive experiences from the convenience of their home by replacing their surroundings with a virtual world._  
  
 _Reference_
 
