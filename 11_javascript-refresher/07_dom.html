@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07_DOM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #message {
+            margin-top: 20px;
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Document Object Model</h1>
+
+    <button id="colorBtn">Change Background Color</button>
+
+    <p id="favoriteColor"></p>
+    <script>
+    const btn = document.getElementById("colorBtn");
+    const favoriteColor = document.getElementById("favoriteColor");
+    const message = document.getElementById("message");
+    btn.addEventListener("click", () => {
+      const color = prompt("What is your favorite color?");
+      if (color) {
+        document.body.style.backgroundColor = color;
+        favoriteColor.textContent = "Your favorite color is: " + color;
+      }
+    });
+
+    setTimeout(() => {
+      message.textContent = "This message appears after 2 seconds";
+    }, 2000);
+     </script>
+</body>
+</html>
