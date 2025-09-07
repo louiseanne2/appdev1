@@ -1,2 +1,5 @@
 Line 1
 Line 2
+
+Unlike git reset, git revert does not delete commits instead, it creates a new commit that undergoes the changes of the specified commit.
+This mean that the history of the commits remains intact, including the original commit.
