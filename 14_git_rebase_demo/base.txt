@@ -1,1 +1,5 @@
 Base work
+
+By doing this exercise, I understood that git rebase produces a neater, linear history of commits by pushing the commits of one branch over another.
+Rather than merging, which maintains two divergent lines of development, rebasing replays the commit history in such a way as though the feature branch work was done subsequent to the hotfix.
+The result of this is that the timeline of the project is significantly easier to read and understand.
