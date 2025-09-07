@@ -1,5 +1,0 @@
-Hotfix
-
-his commit unites the histories of both branches while maintaining each one's original timeline. 
-As opposed to git rebase, which remakes history into a linear sequence, merging maintains the actual order of things and indicates precisely where the branches diverged and were subsequently merged.
-nce merged, the history of commits indicated that a new merge commit was present that bound the feature branch into main. 

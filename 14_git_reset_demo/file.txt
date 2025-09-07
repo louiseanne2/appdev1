@@ -1,6 +1,0 @@
-Line 1
-Line 2
-
-After finishing this activity I realized that the commit history went back to the commit and all commits are deleted.
-The context in the text file can revert what it was at the commit stage.
-This show that the reset can change both file and the history to an early state.

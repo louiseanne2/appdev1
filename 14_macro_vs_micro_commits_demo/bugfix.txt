@@ -1,5 +1,0 @@
-Bug fix
-
-By doing this activity, I understood the significant difference between macro commits and micro commits in Git. 
-A macro commit is when multiple unrelated changes are committed together in one commit. 
-Although it might be convenient, it is confusing when looking back at history because the message of the commit does not describe each change distinctly.
