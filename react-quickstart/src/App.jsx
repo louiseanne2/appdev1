@@ -27,12 +27,16 @@ function AboutPage() {
 }
 
 
+<img className="avatar" />
+
+
 
   return (
     <>
       {/* <MyButton /> */}
       {/* <MyApp /> */}
       <AboutPage />
+      
     </>
   )
 }
