@@ -1,5 +1,25 @@
 import './App.css'
 
+let IsLoggnedIn = false;
+let content;
+if (IsLoggnedIn) {
+  content = <AdminPanel />;
+} else {
+  content = <LoginForm />;
+}
+
+
+function AdminPanel() {
+  return <h1>Welcome, Admin!</h1>;
+}
+
+function LoginForm() {
+  return (
+    <h1>Welcome to Login Form</h1>
+  );
+}
+
+
 function App() {
 
 function MyButton() {
@@ -60,7 +80,8 @@ function Profile() {
       {/* <MyButton /> */}
       {/* <MyApp /> */}
       {/* <AboutPage /> */}
-      <Profile />
+      {/* <Profile /> */}
+      {content}
       
     </>
   )
