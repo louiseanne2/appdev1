@@ -72,6 +72,32 @@ function Profile() {
   );
 }
 
+const drinks = [
+  {title : "Juice", isCold : true, id: 1},
+  {title : "Coffee", isCold : false, id: 2},
+  {title : "Tea", isCold : true, id: 3},
+];
+
+function ShoppingList() {
+  const drinkItems = drinks.map(drink => 
+    <li
+      key={drink.id}
+      style={{
+        color: drink.isCold ? 'violet' : 'blue'
+      }}>
+      {drink.title}
+    </li>
+  );
+  return (
+    <ul>
+      <h1>Drinks</h1>
+      <ul>{drinkItems}</ul>
+    </ul>
+  );
+}
+
+
+
 
 
 
@@ -81,10 +107,11 @@ function Profile() {
       {/* <MyApp /> */}
       {/* <AboutPage /> */}
       {/* <Profile /> */}
-      {content}
+      {/* {content} */}
+      <ShoppingList />
       
     </>
   )
-}
 
+}
 export default App
