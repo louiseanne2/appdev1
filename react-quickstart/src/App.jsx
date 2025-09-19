@@ -1,4 +1,6 @@
 import './App.css'
+import { useState } from 'react';
+
 
 let IsLoggnedIn = false;
 let content;
@@ -20,22 +22,22 @@ function LoginForm() {
 }
 
 
-function App() {
 
-function MyButton() {
-  return (
-    <button>I'm a button</button>
-  );
-}
 
-function MyApp() {
-  return (
-    <div>
-      <h1>Welcome to my app</h1>
-      <MyButton />
-    </div>
-  );
-}
+// function MyButton() {
+//   return (
+//     <button>I'm a button</button>
+//   );
+// }
+
+// function MyApp() {
+//   return (
+//     <div>
+//       <h1>Welcome to my app</h1>
+//       <MyButton />
+//     </div>
+//   );
+// }
 
 function AboutPage() {
   return (
@@ -96,22 +98,26 @@ function ShoppingList() {
   );
 }
 
+export default function MyApp() {
+  return (
+    <div>
+      <h1>Counters that update separately</h1>
+      <MyButton />
+      <MyButton />
+    </div>
+  );
+}
 
+function MyButton() {
+  const [count, setCount] = useState(0);
 
-
-
+  function handleClick() {
+    setCount(count + 1);
+  }
 
   return (
-    <>
-      {/* <MyButton /> */}
-      {/* <MyApp /> */}
-      {/* <AboutPage /> */}
-      {/* <Profile /> */}
-      {/* {content} */}
-      <ShoppingList />
-      
-    </>
-  )
-
+    <button onClick={handleClick}>
+      Count: {count}
+    </button>
+  );
 }
-export default App
