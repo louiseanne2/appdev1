@@ -1,7 +1,7 @@
-import PostsFetchAsync from "./PostsFetchAsync";
+import TodosFetchAxios from "./TodosFetchAxios";
 
 function App() {
-  return <PostsFetchAsync />;
+  return <TodosFetchAxios />;
 }
 
 export default App;
