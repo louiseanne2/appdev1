@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux"
-import { updateTodo, deleteTodo } from "./features/todos/todosSlice"
+import todosReducer from "../features/todos/todosSlice";
+import { updateTodo, deleteTodo } from "../features/todos/todosSlice"
 
 function TodoItem ({ todo }) {
   const dispatch = useDispatch()
